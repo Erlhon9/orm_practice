@@ -7,23 +7,23 @@ stockbox                          <- stockboxitem
 """
 
 class Product(models.Model):
-    name: str = models.CharField(null=False)
+    name: str = models.CharField(max_length=100, null=False)
     price: int = models.PositiveIntegerField(null=False)
 
     
 class ProductAttr(models.Model):
     product: Product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    sizes: str = models.CharField(null=False)
-    style: str = models.CharField(null=False)
+    sizes: str = models.CharField(max_length=100, null=False)
+    style: str = models.CharField(max_length=100, null=False)
 
     
 class Stock(models.Model):
     product_attr: ProductAttr = models.ForeignKey(ProductAttr, on_delete=models.CASCADE)
-    code: str = models.CharField(null=False)
+    code: str = models.CharField(max_length=100, null=False)
 
     
 class StockBox(models.Model):
-    address: str = models.CharField(null=False)
+    address: str = models.CharField(max_length=100, null=False)
     created_time: datetime = models.DateTimeField(auto_created=True)
     
 
