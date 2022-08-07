@@ -1,4 +1,6 @@
-django==3.1.1
+django==3.2
 sqlparse==0.3.1
 sqlformatter==1.4
 psycopg2-binary==2.8.6
+django-extensions==3.0.7
+django-debug-toolbar==3.4.0
