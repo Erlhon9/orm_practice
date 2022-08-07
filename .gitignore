@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+.static_storage/
+.media/
+local_settings.py
+
+# pyenv
+.python-version
+
+# Environments
+.venv
+
+# mypy
+.mypy_cache/
+db.sqlite3
+
+.vscode
+.pytest_cache
+.DS_Store
+
+# postgre docker data
+.pgdata

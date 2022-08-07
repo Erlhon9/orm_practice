@@ -1,0 +1,4 @@
+django==3.1.1
+sqlparse==0.3.1
+sqlformatter==1.4
+psycopg2-binary==2.8.6
