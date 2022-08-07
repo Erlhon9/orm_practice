@@ -80,7 +80,7 @@ DATABASES = {
         'NAME': 'querytest',
         'USER': 'root',
         'PASSWORD': '1234',
-        'HOST': 'localhost',
+        'HOST': '127.0.0.1',
         'PORT': '5959',
     }
 }
@@ -129,7 +129,7 @@ LOGGING = {
     'disable_existing_loggers': False,
     'handlers': {
         'sqlhandler': {
-            'level': 'DEBUG',
+            'level': 'ERROR',
             'class': 'logging.StreamHandler',
             'formatter': 'sqlformatter'
         }
